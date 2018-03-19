@@ -1,6 +1,7 @@
 # A-Frame Boilerplate with TypeScript
 
-Boilerplate for creating WebVR scenes with [A-Frame](https://aframe.io) using TypeScript.
+Boilerplate for creating WebVR scenes with [A-Frame](https://aframe.io) using TypeScript. Based on the original 
+[aframe-boilerplate](https://github.com/aframevr/aframe-boilerplate) with TypeScript and Webpack goodness added.
 
 [![Hello World](./preview.png)](https://sbrudz.github.io/ts-aframe-boilerplate/)
 
@@ -20,8 +21,8 @@ After you have __[forked this repo](https://github.com/sbrudz/ts-aframe-boilerpl
 
 ## Developing your scene
 
-The A-Frame best practices recommend putting your application logic in component. This boilerplate sets you up to do that.
-The `src/index.ts` file is your entrypoint to add application logic.  There's currently an example component in there. You
+The A-Frame best practices recommend putting your application logic in components. This boilerplate sets you up to do that.
+The `src/index.ts` file is your entry point to add application logic.  There's currently an example component in there. You
 can either modify what's in there or add more components as separate source files and import those into the index.ts file.
 
 To make changes to the HTML, edit the `src/index.html` file.  When you start the dev server or publish your project, webpack
