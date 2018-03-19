@@ -2,6 +2,8 @@
 
 Boilerplate for creating WebVR scenes with [A-Frame](https://aframe.io) using TypeScript.
 
+[![Hello World](./preview.png)](https://sbrudz.github.io/ts-aframe-boilerplate/)
+
 ## Getting Started
 
 You can __[fork this repo](https://github.com/sbrudz/ts-aframe-boilerplate/fork)__ to get started, if you'd like to maintain a Git workflow.
