@@ -6,8 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --port 3000 --open",
     "build": "webpack",
-    "deploy": "gh-pages",
-    "ghpages": "gh-pages"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Steve Brudz",
   "keywords": [
