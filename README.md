@@ -3,7 +3,7 @@
 Boilerplate for creating WebVR scenes with [A-Frame](https://aframe.io) using TypeScript. Based on the original 
 [aframe-boilerplate](https://github.com/aframevr/aframe-boilerplate) with TypeScript and Webpack goodness added.
 
-[![Hello World](./preview.png)](https://sbrudz.github.io/ts-aframe-boilerplate/)
+[![Hello World](./src/assets/preview.png)](https://sbrudz.github.io/ts-aframe-boilerplate/)
 
 ## Getting Started
 
@@ -35,6 +35,9 @@ uses this file as a template and adds the generated bundle of code to the header
 Note that because the bundle.js file is appended to the header, your DOM won't be ready at the time the file loads so you
 won't be able to write code that finds HTML elements in the body of your document.  Instead, you should wrap your code within
 an A-Frame component (in the init or update methods).  This code will then be run at the correct point in the A-Frame lifecycle.
+
+If you have assets to include, such as textures, place them in the `src/assets` directory.  Webpack will serve these assets up
+at the `/assets` location.  For example, on your local server, they would be available at `http://localhost:3000/assets`.
 
 To reduce the generated bundle size, the A-Frame library is marked as an external library in webpack, which means that webpack will not
 bundle it and instead is expecting A-Frame to be included on the page already.  The index.html file is loading it from the

@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     mode: "development",
@@ -23,7 +24,8 @@ module.exports = {
             path: path.resolve(__dirname, "dist"),
             filename: 'index.html',
             inject: 'head'
-        })
+        }),
+        new CopyWebpackPlugin([{ from: 'src/assets', to: 'assets' }])
     ],
     externals: {
         aframe: {
