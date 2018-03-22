@@ -32,7 +32,8 @@ AFRAME.registerComponent('hello-world', {
      * Called when a component is removed (e.g., via removeAttribute).
      * Generally undoes all modifications to the entity.
      */
-    remove: function () { },
+    remove: function () {
+    },
 
     /**
      * Called on each scene tick.
@@ -40,7 +41,7 @@ AFRAME.registerComponent('hello-world', {
     tick: function (time: number, timeDelta: number) {
         if (this.isPlaying) {
             const rotation: Coordinate = this.el.getAttribute('rotation');
-            const newRotation = { ...rotation };
+            const newRotation = {...rotation};
             newRotation.x += this.data.rotationSpeed;
             newRotation.z += this.data.rotationSpeed;
             this.el.setAttribute('rotation', newRotation);
@@ -51,11 +52,13 @@ AFRAME.registerComponent('hello-world', {
      * Called when entity pauses.
      * Use to stop or remove any dynamic or background behavior such as events.
      */
-    pause: function () {},
+    pause: function () {
+    },
 
     /**
      * Called when entity resumes.
      * Use to continue or add any dynamic or background behavior such as events.
      */
-    play: function () {}
+    play: function () {
+    }
 });

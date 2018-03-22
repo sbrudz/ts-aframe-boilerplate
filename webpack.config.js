@@ -14,7 +14,7 @@ module.exports = {
     },
     module: {
         rules: [
-            { test: /\.tsx?$/, loader: "ts-loader" }
+            {test: /\.tsx?$/, loader: "ts-loader"}
         ]
     },
     plugins: [
@@ -25,8 +25,8 @@ module.exports = {
             inject: 'head'
         })
     ],
-    externals : {
-        aframe : {
+    externals: {
+        aframe: {
             commonjs: "aframe",
             amd: "aframe",
             root: "AFRAME" // global variable
