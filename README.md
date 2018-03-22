@@ -8,11 +8,14 @@ Boilerplate for creating WebVR scenes with [A-Frame](https://aframe.io) using Ty
 ## Getting Started
 
 You can __[fork this repo](https://github.com/sbrudz/ts-aframe-boilerplate/fork)__ to get started, if you'd like to maintain a Git workflow.
+This repo provides a script (`create-new.sh`) that helps you quickly stand up a new project based on the boilerplate.
 
 After you have __[forked this repo](https://github.com/sbrudz/ts-aframe-boilerplate/fork)__, clone a copy of your fork locally and you'll be have your scene ready in these few steps:
 
     git clone https://github.com/sbrudz/ts-aframe-boilerplate.git
-    cd ts-aframe-boilerplate && rm -rf .git && npm install
+    cd ts-aframe-boilerplate
+    ./create-new.sh my-new-project
+    cd my-new-project
     npm start
 
 > :iphone: **Mobile pro tip:** Upon starting the development server, the URL will be logged to the console. Load that URL from a browser on your mobile device. (If your mobile phone and computer are not on the same LAN, consider using [ngrok](https://ngrok.com/) for local development and testing. [Browsersync](https://www.browsersync.io/) is also worth a gander.)
