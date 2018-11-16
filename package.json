@@ -20,17 +20,17 @@
     "typescript"
   ],
   "dependencies": {
-    "@types/aframe": "^0.7.1",
-    "aframe": "^0.7.1"
+    "@types/aframe": "^0.8.0",
+    "aframe": "^0.8.2"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^4.5.1",
-    "gh-pages": "^1.1.0",
+    "gh-pages": "^2.0.1",
     "html-webpack-plugin": "^3.0.6",
     "ts-loader": "^4.0.1",
     "typescript": "^2.7.2",
-    "webpack": "^4.1.1",
+    "webpack": "^4.25.1",
     "webpack-cli": "^2.0.12",
-    "webpack-dev-server": "^3.1.1"
+    "webpack-dev-server": "^3.1.10"
   }
 }

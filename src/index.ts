@@ -1,7 +1,7 @@
 /**
  * hello-world component for A-Frame.
  */
-import Coordinate = AFrame.Coordinate;
+import {Coordinate} from "aframe";
 
 AFRAME.registerComponent('hello-world', {
     schema: {
