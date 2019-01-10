@@ -39,13 +39,11 @@ AFRAME.registerComponent('hello-world', {
      * Called on each scene tick.
      */
     tick: function (time: number, timeDelta: number) {
-        if (this.isPlaying) {
-            const rotation: Coordinate = this.el.getAttribute('rotation');
-            const newRotation = {...rotation};
-            newRotation.x += this.data.rotationSpeed;
-            newRotation.z += this.data.rotationSpeed;
-            this.el.setAttribute('rotation', newRotation);
-        }
+        const rotation: Coordinate = this.el!.getAttribute('rotation');
+        const newRotation = {...rotation};
+        newRotation.x += this.data.rotationSpeed;
+        newRotation.z += this.data.rotationSpeed;
+        this.el!.setAttribute('rotation', newRotation);
     },
 
     /**
