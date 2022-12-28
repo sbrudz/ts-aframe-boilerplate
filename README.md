@@ -1,5 +1,7 @@
 # A-Frame Boilerplate with TypeScript
 
+**NOTE 28 Dec 2022:** This repo hasn't been actively maintained for a while (it's still on aframe 0.8) and I don't plan on upating it, so I've placed it into Archive/read-only mode.
+
 Boilerplate for creating WebVR scenes with [A-Frame](https://aframe.io) using TypeScript. Based on the original 
 [aframe-boilerplate](https://github.com/aframevr/aframe-boilerplate) with TypeScript and Webpack goodness added.
 
